@@ -9,7 +9,6 @@ on:
 
 jobs:
   draw:
-    
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write  
@@ -17,4 +16,4 @@ jobs:
       keymap_patterns: "config/crosses.keymap"
       output_folder: "img"  
       config_path: "keymap_drawer.config.yaml"
-      extra_draw_args: "-z cb-zmk-keebs/boards/shields/crosses/forty_two_layout.dtsi"
+      draw_args: "crosses:'-d cb-zmk-keebs/boards/shields/crosses/forty_two_layout.dtsi'"
