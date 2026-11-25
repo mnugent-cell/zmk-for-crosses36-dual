@@ -17,4 +17,4 @@ jobs:
       keymap_patterns: "config/crosses.keymap"
       output_folder: "img"  
       config_path: "keymap_drawer.config.yaml"
-      draw_args: "-z cb-zmk-keebs/boards/shields/crosses/forty_two_layout.dtsi"
+      extra_draw_args: "-z cb-zmk-keebs/boards/shields/crosses/forty_two_layout.dtsi"
