@@ -10,14 +10,14 @@
         compatible = "zmk,combos";
 
         bluetooth_layer {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <37 40>;
         };
 
         studio_unlock {
             bindings = <&studio_unlock>;
             key-positions = <35 24>;
-            layers = <4>;
+            layers = <5>;
         };
     };
 
@@ -36,58 +36,58 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                  &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G                  &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B                  &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &mo 3  &mo 1  &mt LEFT_ALT LEFT_GUI  &kp RET  &mo 2  &kp SPACE
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G         &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                         &mo 4  &mo 1  &kp LEFT_GUI  &kp RET  &mo 2  &kp SPACE
             >;
         };
 
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp TAB           &trans  &kp PAGE_UP    &kp HOME  &kp INSERT  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans      &kp BSPC
-&kp LEFT_CONTROL  &trans  &kp PAGE_DOWN  &kp END   &kp DELETE  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans      &trans
-&kp LSHFT         &trans  &trans         &trans    &trans      &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT  &kp RIGHT_SHIFT
-                                         &trans    &trans      &trans  &trans  &trans           &kp KP_NUMBER_0
+&trans  &trans  &kp PAGE_UP    &kp HOME  &kp INSERT  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(KP_MINUS)  &trans
+&trans  &trans  &kp PAGE_DOWN  &kp END   &kp DELETE  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS       &none
+&trans  &trans  &trans         &trans    &trans      &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT        &trans
+                               &trans    &trans      &trans  &trans  &trans           &kp KP_NUMBER_0
             >;
         };
 
         raise_layer {
             display-name = "Raise";
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BSPC
-&kp LCTRL  &trans        &trans        &trans        &trans        &trans  &kp MINUS     &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &mo 5
-&kp LSHFT  &trans        &trans        &trans        &trans        &trans  &kp UNDER     &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp RIGHT_SHIFT
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7     &kp N8     &kp N9    &kp N0    &trans
+&trans     &none         &none         &none         &none         &none   &kp MINUS     &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &mo 3
+&trans     &none         &none         &none         &none         &none   &kp UNDER     &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
                                        &trans        &trans        &trans  &trans        &trans     &kp SPACE
+            >;
+        };
+
+        Fn {
+            bindings = <
+&kp TAB  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &kp F12  &none   &none   &none   &none   &none   &none   &none   &none   &none    &trans
+&trans   &none    &none   &none   &none   &none   &none   &none   &none   &none   &none    &trans
+                          &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&kp ESCAPE  &trans  &trans     &trans     &trans     &trans  &trans  &trans    &kp UP    &trans     &trans  &trans
-&caps_word  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&kp K_LOCK  &trans  &trans     &trans     &trans     &trans  &trans  &trans    &trans    &trans     &trans  &trans
-                               &trans     &trans     &trans  &trans  &trans    &trans
+&kp ESCAPE  &none  &none      &none      &none      &none   &none   &none     &kp UP    &none      &none  &none
+&trans      &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &trans
+&trans      &none  &none      &none      &none      &none   &none   &none     &none     &none      &none  &trans
+                              &trans     &trans     &trans  &trans  &trans    &trans
             >;
         };
 
         bluetooth_layer {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &kp K_MUTE    &kp C_VOLUME_UP    &trans              &trans      &CLEAR_BT
-&trans  &trans        &trans        &trans        &trans        &trans        &kp C_PREVIOUS  &kp C_REWIND  &kp K_PLAY_PAUSE   &kp C_FAST_FORWARD  &kp C_NEXT  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans          &trans        &kp C_VOLUME_DOWN  &trans              &trans      &trans
-                                    &trans        &trans        &trans        &trans          &trans        &trans
-            >;
-        };
-
-        Fn {
-            bindings = <
-&trans  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-                         &trans  &trans  &trans  &trans  &trans  &trans
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none           &kp K_MUTE    &kp C_VOLUME_UP    &none               &none       &CLEAR_BT
+&none  &none         &none         &none         &none         &none         &kp C_PREVIOUS  &kp C_REWIND  &kp K_PLAY_PAUSE   &kp C_FAST_FORWARD  &kp C_NEXT  &none
+&none  &none         &none         &none         &none         &none         &none           &none         &kp C_VOLUME_DOWN  &none               &none       &none
+                                   &trans        &trans        &trans        &trans          &trans        &trans
             >;
         };
     };
