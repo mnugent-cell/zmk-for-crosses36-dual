@@ -1393,6 +1393,12 @@ rect.held, rect.combo.held {
 <a href="#bluetooth">
 <text x="420" y="236" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-1">
+<path d="M424,203 l378,0" class="combo"/>
+<path d="M424,203 l-378,0" class="combo"/>
+<rect rx="6" ry="6" x="410" y="190" width="28" height="26" class="combo"/>
+<text x="424" y="203" class="combo tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1602)" class="layer-Fn">

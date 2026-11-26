@@ -261,3 +261,6 @@ layers:
 combos:
 - p: [37, 40]
   k: bluetooth
+- p: [35, 24]
+  k: '&studio_unlock'
+  l: [bluetooth]
