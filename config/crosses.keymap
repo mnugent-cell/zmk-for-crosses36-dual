@@ -13,6 +13,12 @@
             bindings = <&mo 4>;
             key-positions = <37 40>;
         };
+
+        studio_unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <35 24>;
+            layers = <4>;
+        };
     };
 
     behaviors {
