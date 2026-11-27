@@ -1,7 +1,5 @@
 layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_42_layout}
 layers:
-  Base: ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', Mouse, Lower, LEFT ALT, '$$mdi:keyboard-return$$', Raise, '$$mdi:keyboard-space$$']
   Lower:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -13,7 +11,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - $$mdi:apple-keyboard-shift$$+KP MINUS
+  - KP SUBTRACT
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -40,11 +38,13 @@ layers:
   - KP DOT
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
+  Base: ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, V, B, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', Mouse, Lower, LEFT ALT, '$$mdi:keyboard-return$$', Raise, '$$mdi:keyboard-space$$']
   Raise:
   - '`'
   - '1'
