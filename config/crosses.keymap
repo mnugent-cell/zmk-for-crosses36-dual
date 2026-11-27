@@ -19,6 +19,26 @@
             key-positions = <35 24>;
             layers = <5>;
         };
+
+        left_gui_combo {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <36 37>;
+        };
+
+        CTRL+ALT+DEL {
+            bindings = <&kp LC(LA(DEL))>;
+            key-positions = <38 37 36>;
+        };
+
+        power_menu {
+            bindings = <&kp K_POWER>;
+            key-positions = <41 40 39>;
+        };
+
+        escape_combo {
+            bindings = <&kp ESC>;
+            key-positions = <38 37>;
+        };
     };
 
     behaviors {
@@ -37,9 +57,9 @@
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G         &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G         &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp APOSTROPHE
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &mo 4  &mo 1  &kp LEFT_GUI  &kp RET  &mo 2  &kp SPACE
+                         &mo 4  &mo 1  &kp LEFT_ALT  &kp RET  &mo 2  &kp SPACE
             >;
         };
 
@@ -75,10 +95,10 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&kp ESCAPE  &none  &none      &none      &none      &none   &none   &none     &kp UP    &none      &none  &none
-&trans      &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &trans
-&trans      &none  &none      &none      &none      &none   &none   &none     &none     &none      &none  &trans
-                              &trans     &trans     &trans  &trans  &trans    &trans
+&trans  &none  &none      &none      &none      &none   &none   &none     &kp UP    &none      &none  &none
+&trans  &none  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &trans
+&trans  &none  &none      &none      &none      &none   &none   &none     &none     &none      &none  &trans
+                          &trans     &trans     &trans  &trans  &trans    &trans
             >;
         };
 
