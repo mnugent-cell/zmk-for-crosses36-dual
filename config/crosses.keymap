@@ -25,7 +25,7 @@
             key-positions = <36 37>;
         };
 
-        CTRL+ALT+DEL {
+        ctrl_alt_del {
             bindings = <&kp LC(LA(DEL))>;
             key-positions = <38 37 36>;
         };
