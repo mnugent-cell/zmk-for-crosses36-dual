@@ -227,7 +227,8 @@ combos:
   k: LEFT GUI
 - p: [38, 37, 36]
   k: Ctl+Alt+DEL
-- p: [41, 40, 39]
-  k: POWER
 - p: [38, 37]
   k: $$mdi:keyboard-esc$$
+- p: [24, 35]
+  k: CAPSLOCK
+  l: [Base]
