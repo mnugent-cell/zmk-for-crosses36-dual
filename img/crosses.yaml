@@ -194,9 +194,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PREVIOUS
-  - REWIND
+  - RW
   - PLAY PAUSE
-  - FAST FORWARD
+  - FF
   - NEXT
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
