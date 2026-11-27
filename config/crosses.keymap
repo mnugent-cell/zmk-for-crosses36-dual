@@ -30,14 +30,15 @@
             key-positions = <38 37 36>;
         };
 
-        power_menu {
-            bindings = <&kp K_POWER>;
-            key-positions = <41 40 39>;
-        };
-
         escape_combo {
             bindings = <&kp ESC>;
             key-positions = <38 37>;
+        };
+
+        capslock_combo {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <24 35>;
+            layers = <0>;
         };
     };
 
