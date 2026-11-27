@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_42_layout}
 layers:
   Base: ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, Mouse, Lower, LEFT GUI, '$$mdi:keyboard-return$$', Raise, '$$mdi:keyboard-space$$']
+    Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, Mouse, Lower, LEFT ALT, '$$mdi:keyboard-return$$', Raise, '$$mdi:keyboard-space$$']
   Lower:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -132,7 +132,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Mouse:
-  - ESCAPE
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -223,3 +223,11 @@ combos:
 - p: [35, 24]
   k: '&studio_unlock'
   l: [bluetooth]
+- p: [36, 37]
+  k: LEFT GUI
+- p: [38, 37, 36]
+  k: Ctl+Alt+DEL
+- p: [41, 40, 39]
+  k: POWER
+- p: [38, 37]
+  k: $$mdi:keyboard-esc$$
